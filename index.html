@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<h2>HTML Forms</h2>
+
+<form action="/submit" method='post'>
+    <label for="Time">Time:</label><br>
+    <input type="text" id="time" name="time" value="month (08)-date (30)-year (2021)"><br>
+    <label for="GT_Exhaust_Temp">GT_Exhaust_Temp:</label><br>
+    <input type="text" id="GT_exhaustTemp" name="GT_exhaustTemp" value="1060"><br>
+    <label for="Compressor_Inlet_Temp">Compressor_Inlet_Temp</label><br> 
+    <input type="text" id="Comp_inletTemp" name="Comp_inletTemp" value="71.6"><br>
+    <label for="IGV_angle_in">IGV_angle_in:</label><br>
+    <input type="text" id="IGV_angleInlet" name="IGV_angleInlet" value="63.9"><br>
+    <label for="Compressor_Dis_Press">Compressor_Dis_Press:</label><br>
+    <input type="text" id="Compressor_disPress" name="Compressor_disPress" value="137.3"><br>
+    <label for="Compressor_Dis_Temp">Compressor_Dis_Temp:</label><br>
+    <input type="text" id="Compressor_disTemp" name="Compressor_disTemp" value="641"><br>
+    <input type="submit" value="Submit"><br>
+
+</form>
+
+<br><br><h3>{{ predicted_power }}<h3></h3>
+
+<p> If you click "Submit" button, the form-data will be sent</p>
+</body>
+
+</html>
