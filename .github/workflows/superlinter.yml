@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          token: ${{ secrets.DATALAB_SECRET_TOKEN }}
+          DATALAB_SECRET_TOKEN: ${{ secrets.DATALAB_SECRET_TOKEN }}
       - name: Check
         if : "contains(github.event.head_commit.message, '[gitTest, merge]')"
         run : |
