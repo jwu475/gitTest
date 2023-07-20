@@ -16,7 +16,7 @@ jobs:
         # to add with token 
         
       - name: Check
-        if : "contains(github.event.head_commit.message, '[gitTest, merge]')"
+        #if : "contains(github.event.head_commit.message, '[gitTest, merge]')"
         run : |
           echo "[LOG] It contains [gitTest], will update to other repo"
           cd ../../../../gitTest/
