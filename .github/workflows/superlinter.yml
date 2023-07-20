@@ -12,10 +12,10 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Check
-        #if : "contains(github.event.head_commit.message, '[gitTest]')"
+        if : "contains(github.event.head_commit.message, '[gitTest, merge]')"
         run : |
           echo "[LOG] It contains [gitTest], will update to other repo"
           cd ../../../../
