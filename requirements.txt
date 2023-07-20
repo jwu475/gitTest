@@ -1,12 +1,5 @@
 an interesting project to engage oneself into
 many new things can be learned from this project
 
-click
-Flask
-numpy
-requests
-scikit-learn
-scipy
-gunicorn
-jsonify
+
 add docker to check
