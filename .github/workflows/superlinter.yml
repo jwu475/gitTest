@@ -13,7 +13,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-
+        # to add with token 
+        
       - name: Check
         if : "contains(github.event.head_commit.message, '[gitTest, merge]')"
         run : |
