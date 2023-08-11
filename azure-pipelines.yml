@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '293b789e-3fd5-4b63-b24a-71d2e6d26602'
   imageRepository: 'jwupower'
   containerRegistry: 'jwutestcr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
